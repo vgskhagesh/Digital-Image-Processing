@@ -29,3 +29,34 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
 <b>White noise in dark background:</b> White pixels correspond to high pixel intensity and dark pixel corresponds to low pixel intensity. Let us consider only one center white pixel in between dark pixels. In this case the coefficients in range filter are very low because the difference is very high(white pixel intensity – dark pixel intensity) and exponent of -ve of this high value is very low. So the overall filter  doesnot vary much and the final pixel intensity is almost same earlier, because the dark pixels are nullified because low weight is given to  them and they add to negligibl amount to the filter calculation. Result: So, very bright pixels are retained and pixels relative to background dark pixels are filtered.<br>
 
 <b>Black noise in white background:</b> The procedure is similar to that in the above case but the main difference is here the bright pixels are nullified retaining the dark pixels. 
+
+1. Input and output for spnoisy.jpg
+   - Mask size = 5
+   - Sigma_r = 80 (more than 80 will cause blurring and less than 80 will not remove noise)
+   - Siggm_d = 40 (any value between 10+ works same).
+
+<p align="center">
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_spnoisy.jpg"><br>
+  <em>Original Image</em>
+</p>
+
+<p align="center">
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_spnoisy.jpg"><br>
+  <em>Filtered Image</em>
+</p>
+
+2. Input and output for spunifnoisy.jpg
+   - Mask size = 5
+   - Sigma_r = 60 (more than 80 will cause blurring and less than 80 will not remove noise)
+   - Siggm_d = 40 (any value between 10+ works same).
+   - Remark: The output is almost as expected and the noise iss removed with much less sigma_r when compared with previous example.
+
+<p align="center">
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_spnoisy.jpg"><br>
+  <em>Original Image</em>
+</p>
+
+<p align="center">
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_spnoisy.jpg"><br>
+  <em>Filtered Image</em>
+</p>
