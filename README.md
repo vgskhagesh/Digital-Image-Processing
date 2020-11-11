@@ -52,11 +52,11 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
    - Remark: The output is almost as expected and the noise iss removed with much less sigma_r when compared with previous example.
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_spnoisy.jpg"><br>
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_spunifnoisy.jpg"><br>
   <em>Original Image</em>
 </p>
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_spnoisy.jpg"><br>
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_spunifnoisy.jpg"><br>
   <em>Filtered Image</em>
 </p>
