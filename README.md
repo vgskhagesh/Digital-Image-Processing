@@ -91,3 +91,24 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
   <img src="3.%20Edge%20Preserving%20Smoothing%20Filter/output_lenna.noise.jpg"><br>
   <em>Filtered Image</em>
 </p>
+
+# 4.	Corner Detection
+<b>Harris Corner Detection:</b> The technique here used is based on the change of function of sum of difference in neighbouring patch pixels. This approach is computationally very expensive, so we can reduce the time complexity by calculating the second moment matrix whose time complexity is the order of number of pixels in that particular patch(patch size is taken to be constant).
+<br><br>
+Here are some images with edges included.
+1. Threshold = 10^10
+<p align="center">
+  <img src="4.%20Corner%20Detection/IITG_2.jpg"><br>
+</p>
+<p align="center">
+  <img src="4.%20Corner%20Detection/IITG_2_gray.jpg"><br>
+</p>
+
+2. Threshold = 10^9
+<p align="center">
+  <img src="4.%20Corner%20Detection/IITG_1.jpg"><br>
+</p>
+<p align="center">
+  <img src="4.%20Corner%20Detection/IITG_1_gray.jpg"><br>
+</p>
+
