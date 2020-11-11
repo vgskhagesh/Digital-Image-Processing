@@ -7,5 +7,9 @@ The aim of this problem is to compute a transformation function in such a way th
 Input – Original Image, Target Image.
 Output – Histogram comparison between original, target and transformed image histograms.
 
-![Alt text](1.%20Histogram%20Specification/histogram_output.jpg?raw=true "Title")
+<!--![Alt text](1.%20Histogram%20Specification/histogram_output.jpg?raw=true "Title")-->
+
+<p align="center">
+  <img width="460" height="300" src="1.%20Histogram%20Specification/histogram_output.jpg">
+</p>
 
