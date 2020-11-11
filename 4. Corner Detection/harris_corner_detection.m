@@ -1,3 +1,9 @@
+%%                          Harris Corner Detection
+%   V Khagesh Kumar
+%   170102070
+%   ECE
+%   This program will take 2 minutes to compute.
+
 clear;
 
 original_image = imread('IITG.jpg');

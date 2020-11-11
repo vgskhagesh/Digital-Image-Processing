@@ -1,3 +1,8 @@
+%%                          Histogram Specification
+%   V Khagesh Kumar
+%   170102070
+%   ECE
+
 clear;
 
 %% Load Input Image and Target Image

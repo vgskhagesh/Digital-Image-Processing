@@ -1,3 +1,8 @@
+%%                          Bilateral Filtering
+%   V Khagesh Kumar
+%   170102070
+%   ECE
+
 clear;
 
 %% Bilateral Filter with 3 examples
@@ -6,7 +11,7 @@ mask = 5;
 file_name = "spnoisy.jpg";
 original_image = rgb2gray(imread(file_name));
 image = double(original_image);
-sigma_r = 223;
+sigma_r = 80;
 sigma_d = 10;
 bilateral_filter(mask, original_image, image,sigma_r,sigma_d,file_name);
 
@@ -15,7 +20,7 @@ mask = 5;
 file_name = "spunifnoisy.jpg";
 original_image = rgb2gray(imread(file_name));
 image = double(original_image);
-sigma_r = 60;
+sigma_r = 70;
 sigma_d = 10;
 bilateral_filter(mask, original_image, image,sigma_r,sigma_d,file_name);
 

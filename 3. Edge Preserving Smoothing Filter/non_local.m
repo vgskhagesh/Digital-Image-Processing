@@ -1,4 +1,9 @@
-%% This program will take 2 minutes to compute.
+%%                          Non Local Means - Edge Preserving Filter
+%   V Khagesh Kumar
+%   170102070
+%   ECE
+%   This program will take 2 minutes to compute.
+
 clear;
 
 %% Read Image
