@@ -8,21 +8,21 @@ Input – Original Image, Target Image.<br>
 Output – Histogram comparison between original, target and transformed image histograms.
 
 <p align="center">
-  <img width="460" height="300" src="1.%20Histogram%20Specification/givenhist.jpg"><br>
+  <img src="1.%20Histogram%20Specification/givenhist.jpg"><br>
   <em>Original Image (givenhist.jpg)</em>
 </p>
 
 <p align="center">
-  <img width="460" height="300" src="1.%20Histogram%20Specification/sphist.jpg"><br>
+  <img src="1.%20Histogram%20Specification/sphist.jpg"><br>
   <em>Target Image(Equilized Image) (sphist.jpg)</em>
 </p>
 
 <p align="center">
-  <img width="460" height="300" src="1.%20Histogram%20Specification/histogram_output.jpg"><br>
+  <img src="1.%20Histogram%20Specification/histogram_output.jpg"><br>
   <em>Histogram of original, target and transformed images</em>
 </p>
 
-## 2. 2.	Bilateral Filtering
+## 2.	Bilateral Filtering
 
 Bilateral filter is used to preserve edges with the fact that it depends largely on intensity(range filter) variation rather than spatial(domain filter) only. The filter is more sentitive to standard-deviation of range filter(sigma_r), and less sensitive to standard-deviation of domain filter(sigma_d). Let us experiment on some images and discuss some observation.
 
@@ -36,12 +36,12 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
    - Siggm_d = 40 (any value between 10+ works same).
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_spnoisy.jpg"><br>
+  <img src="2.%20Bilateral%20Filtering/gray_spnoisy.jpg"><br>
   <em>Original Image</em>
 </p>
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_spnoisy.jpg"><br>
+  <img src="2.%20Bilateral%20Filtering/output_spnoisy.jpg"><br>
   <em>Filtered Image</em>
 </p>
 
@@ -52,12 +52,12 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
    - Remark: The output is almost as expected and the noise iss removed with much less sigma_r when compared with previous example.
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_spunifnoisy.jpg"><br>
+  <img src="2.%20Bilateral%20Filtering/gray_spunifnoisy.jpg"><br>
   <em>Original Image</em>
 </p>
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_spunifnoisy.jpg"><br>
+  <img src="2.%20Bilateral%20Filtering/output_spunifnoisy.jpg"><br>
   <em>Filtered Image</em>
 </p>
 
@@ -68,11 +68,26 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
    - Remark: The output is almost as expected and the noise iss removed with much less sigma_r when compared with previous example.
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_unifnoisy.jpg"><br>
+  <img src="2.%20Bilateral%20Filtering/gray_unifnoisy.jpg"><br>
   <em>Original Image</em>
 </p>
 
 <p align="center">
-  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_unifnoisy.jpg"><br>
+  <img src="2.%20Bilateral%20Filtering/output_unifnoisy.jpg"><br>
+  <em>Filtered Image</em>
+</p>
+
+# 3. Edge preserving Smoothing Filters
+<b>Non-local means:</b> This technique preserves the edges (which is also expected from bilateral filtering), which uses the concept of similarity between two neighbourhood patches(unlike bilateral filtering which uses the concept of similarity between two neighbourhood pixels). So, for similarity between patches we use Gaussian Weighted Sum of Square Differences (GSSD), with standard-deviation = sigma_d.
+<br>
+<b>Observation:</b> Sigma_d = 10, h = 30 gives good filtering for lenna.noisy.jpg image. The value of ‘h’ should be large so as to  decrease the weight of GSSD which can be large. Even here sigma_d does not have much significance.
+
+<p align="center">
+  <img src="3.%20Edge%20Preserving%20Smoothing%20Filter/lenna.noise.jpg"><br>
+  <em>Original Image</em>
+</p>
+
+<p align="center">
+  <img src="3.%20Edge%20Preserving%20Smoothing%20Filter/output_lenna.noise.jpg"><br>
   <em>Filtered Image</em>
 </p>
