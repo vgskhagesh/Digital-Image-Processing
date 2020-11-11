@@ -10,9 +10,7 @@ Output – Histogram comparison between original, target and transformed image h
 <!--![Alt text](1.%20Histogram%20Specification/histogram_output.jpg?raw=true "Title")-->
 
 <p align="center">
-  <img width="460" height="300" src="1.%20Histogram%20Specification/histogram_output.jpg">
-  <em>image_caption</em>
+  <img width="460" height="300" src="1.%20Histogram%20Specification/histogram_output.jpg"><br>
+  <em>Histogram of original, target and transformed images</em>
 </p>
 
-<!--{% include image.html url="1.%20Histogram%20Specification/histogram_output.jpg" description="My cat, Robert Downey Jr." %}-->
-{% include image.html img="1.%20Histogram%20Specification/histogram_output.jpg" title="title" caption="caption" %}
