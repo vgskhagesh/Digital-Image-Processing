@@ -11,5 +11,7 @@ Output – Histogram comparison between original, target and transformed image h
 
 <p align="center">
   <img width="460" height="300" src="1.%20Histogram%20Specification/histogram_output.jpg">
+  <em>image_caption</em>
 </p>
 
+{% include image.html url="1.%20Histogram%20Specification/histogram_output.jpg" description="My cat, Robert Downey Jr." %}
