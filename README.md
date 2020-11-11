@@ -47,7 +47,7 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
 
 2. Input and output for spunifnoisy.jpg
    - Mask size = 5
-   - Sigma_r = 60 (more than 80 will cause blurring and less than 80 will not remove noise)
+   - Sigma_r = 70 (more than 80 will cause blurring and less than 80 will not remove noise)
    - Siggm_d = 40 (any value between 10+ works same).
    - Remark: The output is almost as expected and the noise iss removed with much less sigma_r when compared with previous example.
 
@@ -58,5 +58,21 @@ Bilateral filter is used to preserve edges with the fact that it depends largely
 
 <p align="center">
   <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_spunifnoisy.jpg"><br>
+  <em>Filtered Image</em>
+</p>
+
+3. Input and output for unifnoisy.jpg
+   - Mask size = 5
+   - Sigma_r = 20 
+   - Sigma_d = 10 (any value between 10+ works same).
+   - Remark: The output is almost as expected and the noise iss removed with much less sigma_r when compared with previous example.
+
+<p align="center">
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/gray_unifnoisy.jpg"><br>
+  <em>Original Image</em>
+</p>
+
+<p align="center">
+  <img width="460" height="300" src="2.%20Bilateral%20Filtering/output_unifnoisy.jpg"><br>
   <em>Filtered Image</em>
 </p>
